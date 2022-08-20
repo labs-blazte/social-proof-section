@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark--grayish-magenta: hsl(303, 10%, 53%);
+  --light--grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+  --title: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--soft-pink);
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-size: 100%;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.text {
+  color: var(--dark--grayish-magenta);
+}
+
+.title {
+  text-align: center;
+  font-size: var(--title);
+  line-height: 0.9;
+  color: var(--very-dark-magenta);
+  padding-bottom: 1.5rem;
+}
+
+.section-rating {
+  padding-top: 5rem;
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+.content .text {
+  text-align: center;
+}
+
+.section-rating .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-list {
+  display: flex;
+  flex-direction: column;
+}
+.rating-list .rating {
+  background-color: var(--light--grayish-magenta);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.rating-list .rating__stars {
+  margin-bottom: 0.5rem;
+}
+.rating-list .rating__description {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: var(--very-dark-magenta);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.card .text {
+  color: var(--white);
+}
+
+.card-header {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.card-header__profile {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+.card-header__info .text:nth-child(1) {
+  color: var(--white);
+}
+.card-header__info .text:nth-child(2) {
+  color: var(--soft-pink);
+}
+
+.attribution {
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
