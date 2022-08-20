@@ -1,0 +1,13 @@
+$screen-md: 728px;
+$screen-lg: 1280px;
+
+@mixin md {
+  @media screen and (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
